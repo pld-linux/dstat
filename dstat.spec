@@ -51,6 +51,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog README TODO docs/*.html docs/*.txt examples/ dstat.conf
+#check on update if dstat.conf is still experimental
+#%config(noreplace) %{_sysconfdir}/dstat.conf
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man*/*
 %{_datadir}/dstat/
