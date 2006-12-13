@@ -8,6 +8,7 @@ Group:		Applications/System
 Source0:	http://dag.wieers.com/home-made/dstat/%{name}-%{version}.tar.bz2
 # Source0-md5:	aad1d918a982d8392a24a06760175e93
 URL:		http://dag.wieers.com/home-made/dstat/
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -37,8 +38,6 @@ samym interwale czasowym).
 %prep
 %setup -q
 
-%build
-
 %install
 rm -rf $RPM_BUILD_ROOT
 
@@ -55,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 #%config(noreplace) %{_sysconfdir}/dstat.conf
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man*/*
-%{_datadir}/dstat/
+%{_datadir}/dstat
