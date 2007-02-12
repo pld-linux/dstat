@@ -1,5 +1,5 @@
 Summary:	Versatile resource statistics tool
-Summary(pl.UTF-8):   Uniwersalne narzędzie do monitorowania użycia zasobów
+Summary(pl.UTF-8):	Uniwersalne narzędzie do monitorowania użycia zasobów
 Name:		dstat
 Version:	0.6.4
 Release:	1
