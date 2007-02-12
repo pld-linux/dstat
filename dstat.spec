@@ -1,5 +1,5 @@
 Summary:	Versatile resource statistics tool
-Summary(pl):	Uniwersalne narzêdzie do monitorowania u¿ycia zasobów
+Summary(pl.UTF-8):   Uniwersalne narzÄ™dzie do monitorowania uÅ¼ycia zasobÃ³w
 Name:		dstat
 Version:	0.6.4
 Release:	1
@@ -24,16 +24,16 @@ can eg. compare disk usage in combination with interrupts from your
 IDE controller, or compare the network bandwidth numbers directly with
 the disk throughput (in the same interval).
 
-%description -l pl
+%description -l pl.UTF-8
 Dstat jest uniwersalnym zamiennikiem za vmstat, iostat, netstat,
-nfsstat oraz ifstat. Dstat omija niektóre z ich ograniczeñ i dodaje
-nowe funkcjonalno¶ci, wiêcej liczników i elastyczno¶æ. Dstat jest
-wygodny w monitorowaniu systemów podczas testów, benchmarków lub
-rozwi±zywania problemów wydajno¶ciowych.
+nfsstat oraz ifstat. Dstat omija niektÃ³re z ich ograniczeÅ„ i dodaje
+nowe funkcjonalnoÅ›ci, wiÄ™cej licznikÃ³w i elastycznoÅ›Ä‡. Dstat jest
+wygodny w monitorowaniu systemÃ³w podczas testÃ³w, benchmarkÃ³w lub
+rozwiÄ…zywania problemÃ³w wydajnoÅ›ciowych.
 
-Dstat pozwala ogl±daæ wszystkie zasoby jednocze¶nie, np. zestawiæ
-u¿ycie dysku ze statystykami przerwañ kontrolera IDE, lub porównaæ
-wykorzystanie ³±cza bezpo¶rednio z wykorzystaniem dysków (w takim
+Dstat pozwala oglÄ…daÄ‡ wszystkie zasoby jednoczeÅ›nie, np. zestawiÄ‡
+uÅ¼ycie dysku ze statystykami przerwaÅ„ kontrolera IDE, lub porÃ³wnaÄ‡
+wykorzystanie Å‚Ä…cza bezpoÅ›rednio z wykorzystaniem dyskÃ³w (w takim
 samym interwale czasowym).
 
 %prep
