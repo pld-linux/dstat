@@ -9,6 +9,7 @@ Source0:	http://dag.wieers.com/home-made/dstat/%{name}-%{version}.tar.bz2
 # Source0-md5:	aad1d918a982d8392a24a06760175e93
 URL:		http://dag.wieers.com/home-made/dstat/
 Requires:	python
+Requires:	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
