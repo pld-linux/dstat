@@ -1,14 +1,15 @@
 Summary:	Versatile resource statistics tool
 Summary(pl):	Uniwersalne narzêdzie do monitorowania u¿ycia zasobów
 Name:		dstat
-Version:	0.6.4
+Version:	0.6.6
 Release:	1
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://dag.wieers.com/home-made/dstat/%{name}-%{version}.tar.bz2
-# Source0-md5:	aad1d918a982d8392a24a06760175e93
+# Source0-md5:	f2a2c2fa2cd153b778f41d78bc5a8736
 URL:		http://dag.wieers.com/home-made/dstat/
 Requires:	python
+Requires:	python-modules
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
