@@ -1,12 +1,12 @@
 Summary:	Versatile resource statistics tool
 Summary(pl.UTF-8):	Uniwersalne narzędzie do monitorowania użycia zasobów
 Name:		dstat
-Version:	0.6.7
+Version:	0.6.8
 Release:	1
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://dag.wieers.com/home-made/dstat/%{name}-%{version}.tar.bz2
-# Source0-md5:	287903ea851a01167dbedab1bb444656
+# Source0-md5:	1db4098e5b0aec3d7acc340f7899cf73
 URL:		http://dag.wieers.com/home-made/dstat/
 Requires:	python
 Requires:	python-modules
@@ -51,9 +51,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README TODO docs/*.html docs/*.txt examples/ dstat.conf
-#check on update if dstat.conf is still experimental
-#%config(noreplace) %{_sysconfdir}/dstat.conf
+%doc AUTHORS ChangeLog README TODO docs/*.html docs/*.txt examples/ 
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man*/*
 %{_datadir}/dstat
