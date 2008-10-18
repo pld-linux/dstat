@@ -2,7 +2,7 @@ Summary:	Versatile resource statistics tool
 Summary(pl.UTF-8):	Uniwersalne narzędzie do monitorowania użycia zasobów
 Name:		dstat
 Version:	0.6.8
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Applications/System
 Source0:	http://dag.wieers.com/home-made/dstat/%{name}-%{version}.tar.bz2
@@ -45,6 +45,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+# broken symlink
+rm -f examples/dstat.py
 
 %clean
 rm -rf $RPM_BUILD_ROOT
