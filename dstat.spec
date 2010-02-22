@@ -8,6 +8,7 @@ Group:		Applications/System
 Source0:	http://dag.wieers.com/home-made/dstat/%{name}-%{version}.tar.bz2
 # Source0-md5:	a9287762c4b9dade5fd85124ccd003c8
 URL:		http://dag.wieers.com/home-made/dstat/
+BuildRequires:	rpm-pythonprov
 Requires:	python
 Requires:	python-modules
 BuildArch:	noarch
