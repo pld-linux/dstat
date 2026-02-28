@@ -2,7 +2,7 @@ Summary:	Versatile resource statistics tool
 Summary(pl.UTF-8):	Uniwersalne narzędzie do monitorowania użycia zasobów
 Name:		dstat
 Version:	0.7.2
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		Applications/System
 Source0:	http://dag.wieers.com/home-made/dstat/%{name}-%{version}.tar.bz2
