@@ -1,16 +1,17 @@
 Summary:	Versatile resource statistics tool
 Summary(pl.UTF-8):	Uniwersalne narzędzie do monitorowania użycia zasobów
 Name:		dstat
-Version:	0.7.2
-Release:	2
+Version:	0.7.4
+Release:	1
 License:	GPL v2+
 Group:		Applications/System
-Source0:	http://dag.wieers.com/home-made/dstat/%{name}-%{version}.tar.bz2
-# Source0-md5:	bfea4dc8037a0b18fc40a4dfc104dcc8
+Source0:	https://github.com/dagwieers/%{name}/archive/v%{version}/%{name}-%{version}.tar.gz
+# Source0-md5:	9d6a11d1f8cff1e4bf953958c824c798
+Patch0:		220a785321b13b6df92a536080aca6ef1cb644ad.patch
+Patch1:		dstat-python3.patch
 URL:		http://dag.wieers.com/home-made/dstat/
-BuildRequires:	rpm-pythonprov
-Requires:	python
-Requires:	python-modules
+Requires:	python3
+Requires:	python3-six
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -40,6 +41,8 @@ samym interwale czasowym).
 
 %prep
 %setup -q
+%patch 0 -p1
+%patch 1 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -55,7 +58,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog README TODO docs/*.html docs/*.txt examples/
+%doc AUTHORS ChangeLog LINKS README.adoc TODO docs/*.html examples/
 %attr(755,root,root) %{_bindir}/dstat
 %{_mandir}/man1/dstat.1*
 %{_datadir}/dstat
